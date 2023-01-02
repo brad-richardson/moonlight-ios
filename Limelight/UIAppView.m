@@ -43,6 +43,7 @@ static UIImage* noImage;
     [self setAlpha:app.hidden ? 0.4 : 1.0];
     
     _appImage = [[UIImageView alloc] initWithFrame:self.frame];
+    _appImage.contentMode = UIViewContentModeScaleAspectFit;
     [_appImage setImage:noImage];
     [self addSubview:_appImage];
     
